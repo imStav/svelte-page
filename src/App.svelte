@@ -1,23 +1,50 @@
 <script>
   import Card from './lib/Card.svelte'
 
-  let ref = 'https://github.com/'
+  let link = 'https://github.com/'
   let githubProfile = 'https://github.com/imStav'
+
+  // Spread props method
+  const props = {
+    title: 'Card title',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    src: 'https://github.com/',
+    tag: ['tag', 'tag']
+  }
 </script>
 
 <main>
   <h1 class="header">Svelte Page</h1>
 
   <div class="grid">
-    <Card title={'Card title'} text={'lorem ipsum dolor sit amet consectetur'} />
-    <Card title={'Card title'} text={'lorem ipsum dolor sit amet consectetur'} />
-    <Card title={'Card title'} text={'lorem ipsum dolor sit amet consectetur'} />
-    <Card title={'Card title'} text={'lorem ipsum dolor sit amet consectetur'} />
+    <!-- Spread props method -->
+    <Card {...props} />
+
+    <Card 
+      title={'Card title'} 
+      text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'} 
+      src={'https://github.com/'}
+      tag={['tag', 'tag']}
+    />
+
+    <Card 
+      title={'Card title'} 
+      text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'} 
+      src={'https://github.com/'}
+      tag={['tag', 'tag']}
+    />
+
+    <Card 
+      title={'Card title'} 
+      text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'} 
+      src={'https://github.com/'}
+      tag={['tag', 'tag']}
+    />
   </div>
 
   <!-- Replace with your content -->
   <p>
-    Check out our <a href={ref} rel="noreferrer">Terms of Services</a>
+    Check out our <a href={link} rel="noreferrer">Terms of Services</a>
   </p>
 
   <p class="credits">
