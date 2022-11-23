@@ -9,7 +9,7 @@
     title: 'Card title',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     src: 'https://github.com/',
-    tag: ['tag', 'tag']
+    tags: ['tag']
   }
 </script>
 
@@ -24,21 +24,21 @@
       title={'Card title'} 
       text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'} 
       src={'https://github.com/'}
-      tag={['tag', 'tag']}
+      tags={['tag', 'tag']}
     />
 
     <Card 
       title={'Card title'} 
       text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'} 
       src={'https://github.com/'}
-      tag={['tag', 'tag']}
+      tags={['tag', 'tag', 'tag']}
     />
 
     <Card 
       title={'Card title'} 
       text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'} 
       src={'https://github.com/'}
-      tag={['tag', 'tag']}
+      tags={['tag']}
     />
   </div>
 

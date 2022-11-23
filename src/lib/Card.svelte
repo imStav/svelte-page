@@ -2,14 +2,15 @@
   export let title
   export let text
   export let src
-  export let tag = []
+  export let tags = []
 </script>
 
 <div class="card">
   <h2>{title}</h2>
   <div class="inline-tags">
-    <span>#{tag[0]}</span>
-    <span>#{tag[1]}</span>
+    {#each tags as tag}
+    <span>#{tag}</span>
+    {/each}
   </div>
   <p>{text}</p>
   <a href={src}>Read more</a>
