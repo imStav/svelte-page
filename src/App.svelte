@@ -7,9 +7,9 @@
   // Spread props method
   const props = {
     title: 'Card title',
+    tags: ['tag'],
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    src: 'https://github.com/',
-    tags: ['tag']
+    src: 'https://github.com/'
   }
 </script>
 
@@ -22,23 +22,23 @@
 
     <Card 
       title={'Card title'} 
-      text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'} 
-      src={'https://github.com/'}
       tags={['tag', 'tag']}
+      text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'} 
+      src={'https://github.com/'}
     />
 
     <Card 
       title={'Card title'} 
-      text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'} 
-      src={'https://github.com/'}
       tags={['tag', 'tag', 'tag']}
+      text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'} 
+      src={'https://github.com/'}
     />
 
     <Card 
       title={'Card title'} 
+      tags={['tag']}
       text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'} 
       src={'https://github.com/'}
-      tags={['tag']}
     />
   </div>
 

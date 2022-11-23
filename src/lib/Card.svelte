@@ -1,8 +1,8 @@
 <script>
   export let title
+  export let tags = []
   export let text
   export let src
-  export let tags = []
 </script>
 
 <div class="card">
