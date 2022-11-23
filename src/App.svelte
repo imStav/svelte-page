@@ -1,45 +1,43 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
-  import Counter from './lib/Counter.svelte'
+  import Card from './lib/Card.svelte'
+
+  let ref = 'https://github.com/'
+  let githubProfile = 'https://github.com/imStav'
 </script>
 
 <main>
-  <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer"> 
-      <img src="/vite.svg" class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer"> 
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte</h1>
+  <h1 class="header">Svelte Page</h1>
 
-  <div class="card">
-    <Counter />
+  <div class="grid">
+    <Card title={'Card title'} text={'lorem ipsum dolor sit amet consectetur'} />
+    <Card title={'Card title'} text={'lorem ipsum dolor sit amet consectetur'} />
+    <Card title={'Card title'} text={'lorem ipsum dolor sit amet consectetur'} />
+    <Card title={'Card title'} text={'lorem ipsum dolor sit amet consectetur'} />
   </div>
 
+  <!-- Replace with your content -->
   <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
+    Check out our <a href={ref} rel="noreferrer">Terms of Services</a>
   </p>
 
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
+  <p class="credits">
+    Made by <a href={githubProfile}>imStav</a> | Powered by Svelte & Vite
   </p>
 </main>
 
 <style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
+  .header {
+    margin-top: 2rem;
   }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-block: 3rem;
   }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
+
+  .credits {
     color: #888;
   }
 </style>
