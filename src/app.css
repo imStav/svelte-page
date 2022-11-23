@@ -18,6 +18,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --accent-primary: #ff3907;
+  --accent-secondary: #00a2ff;
 }
 
 body {
@@ -26,7 +29,7 @@ body {
 }
 
 a {
-  color: #00a2ff;
+  color: var(--accent-primary);
 }
 
 a:hover {

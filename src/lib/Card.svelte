@@ -36,7 +36,7 @@
   .card a {
     text-decoration: none;
     color: whitesmoke;
-    background-color: #00a2ff;
+    background-color: var(--accent-primary);
     padding: .5rem 1.5rem;
     border-radius: 100px;
   }
