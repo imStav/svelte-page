@@ -1,4 +1,5 @@
 <script>
+  import svelteLogo from './assets/svelte.svg'
   import Card from './lib/Card.svelte'
 
   let link = 'https://github.com/'
@@ -14,7 +15,10 @@
 </script>
 
 <main>
-  <h1 class="header">Svelte Page</h1>
+  <div class="header">
+    <img src={svelteLogo} alt="Svelte Page logo">
+    <h1 class="heading">Svelte Page</h1>
+  </div>
 
   <div class="grid">
     <!-- Spread props method -->
@@ -54,7 +58,17 @@
 
 <style>
   .header {
+    display: flex;
     margin-top: 2rem;
+    place-items: center;
+  }
+
+  .header img {
+    filter: saturate(1);
+  }
+
+  .heading {
+    margin-left: 1rem;
   }
 
   .grid {
