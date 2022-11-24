@@ -18,7 +18,6 @@
 
 <style>
   .card {
-    max-width: 300px;
     padding: 1.5rem 1rem;
     border: 1px solid;
     border-radius: 6px;

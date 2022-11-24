@@ -14,7 +14,7 @@
   }
 </script>
 
-<main>
+<main class="border">
   <div class="header">
     <img src={svelteLogo} alt="Svelte Page logo">
     <h1 class="heading">Svelte Page</h1>
@@ -57,6 +57,11 @@
 </main>
 
 <style>
+  main {
+    max-width: 50%;
+    margin-inline: auto;
+  }
+
   .header {
     display: flex;
     margin-top: 2rem;
@@ -80,5 +85,23 @@
 
   .credits {
     color: #888;
+  }
+
+  @media screen and (max-width: 1200px) {
+    main {
+      max-width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    main {
+      max-width: 70%;
+    }
+  }
+
+  @media screen and (max-width: 780px) {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 </style>
