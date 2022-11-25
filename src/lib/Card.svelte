@@ -28,6 +28,7 @@
   }
 
   .card p {
+    filter: opacity(.9);
     margin-top: 1rem;
     margin-bottom: 1.5rem;
   }
