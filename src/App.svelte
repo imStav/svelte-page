@@ -1,7 +1,6 @@
 <script>
   import svelteLogo from './assets/svelte.svg'
   import Card from './lib/Card.svelte'
-  import About from './lib/About.svelte'
   import Block from './lib/Block.svelte'
   import Paragraph from './lib/Paragraph.svelte';
 
@@ -25,13 +24,13 @@
 
   <hr>
 
-  <section>
+  <div class="catchline">
     <h2>Our services</h2>
 
     <Paragraph 
       text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}
     />
-  </section>
+  </div>
 
   <div class="grid">
     <!-- Spread props method -->
@@ -57,15 +56,16 @@
       text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'} 
       src={'https://github.com/'}
     />
+  </div>
 
-    <!-- 
-      You can move the About component away 
-      and create a dedicated block / section
-    -->
-    <About
-       title={'About'} 
-       text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}
-    />
+  <div class="grid">
+    <div>
+      <h2>About</h2>
+
+      <Paragraph
+        text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'} 
+      />
+    </div>
 
     <Block />
     <Block />
@@ -98,7 +98,7 @@
     margin-bottom: 2rem;
   }
 
-  section h2 { margin-bottom: 1rem; }
+  .catchline h2 { margin-bottom: 1rem; }
 
   .header {
     display: flex;
@@ -106,7 +106,6 @@
     place-items: center;
   }
 
-  .header img { filter: saturate(1); }
   .heading { margin-left: 1rem; }
 
   .grid {
@@ -115,6 +114,8 @@
     gap: 1.5rem;
     margin-block: 3rem;
   }
+
+  .grid h2 { margin-bottom: 1rem; }
 
   .credits { color: #888; }
 
