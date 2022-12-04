@@ -2,7 +2,6 @@
   import svelteLogo from './assets/svelte.svg'
   import Card from './lib/Card.svelte'
   import Block from './lib/Block.svelte'
-  import Paragraph from './lib/Paragraph.svelte';
 
   let link = 'https://github.com/'
   let githubProfile = 'https://github.com/imStav'
@@ -27,9 +26,9 @@
   <div class="catchline">
     <h2>Our services</h2>
 
-    <Paragraph 
-      text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}
-    />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
   </div>
 
   <div class="grid">
@@ -62,17 +61,17 @@
     <div>
       <h2>About</h2>
 
-      <Paragraph
-        text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'} 
-      />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
     </div>
 
     <Block />
     <Block />
 
-    <Paragraph
-      text={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'} 
-    />
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
   </div>
 
   <div>
