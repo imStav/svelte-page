@@ -1,11 +1,11 @@
-# Svelte Page
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="/src/assets/screenshots/preview-dark-mode.PNG">
   <img alt="Svelte Page's preview in light and dark mode." src="/src/assets/screenshots/preview-light-mode.PNG">
 </picture>
 
-> A static web app template based on Svelte and powered by Vite. Keep the layouts, change the pictures, the blocks, the texts, publish.
+# Svelte Page
+
+> A **static** web app template based on `Svelte` and powered by `Vite`. The aim of this project is to provide a **minimal starter** website
 
 ## ⌨️ Setup
 
@@ -45,7 +45,7 @@ npm run preview
 
 *Find more information in the `package.json` file*
 
-## 📚 Official documentations
+## 📚 Documentations
 
-- [Svelte docs'](https://svelte.dev/docs)
-- [Vite docs'](https://vitejs.dev/guide/)
+- Find out the Svelte's documentation here @ [svelte.dev/docs](https://svelte.dev/docs)
+- Vite's documentation @ [vitejs.dev](https://vitejs.dev/guide/)
