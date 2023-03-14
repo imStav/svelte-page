@@ -1,7 +1,6 @@
 <script>
   import svelteLogo from './assets/svelte.svg'
   import Card from './lib/Card.svelte'
-  import Block from './lib/Block.svelte'
 
   let link = 'https://github.com/'
   let githubProfile = 'https://github.com/imStav'
@@ -16,20 +15,10 @@
 </script>
 
 <main>
-  <div class="header">
+  <header class="header">
     <img src={svelteLogo} alt="Svelte Page logo">
-    <h1 class="heading">Svelte Page</h1>
-  </div>
-
-  <hr>
-
-  <div class="catchline">
-    <h2>Our services</h2>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-  </div>
+    <h1 class="heading">John Doe</h1>
+  </header>
 
   <div class="grid">
     <!-- Spread props method -->
@@ -57,84 +46,60 @@
     />
   </div>
 
-  <div class="grid">
-    <div>
-      <h2>About</h2>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-    </div>
-
-    <Block />
-    <Block />
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-  </div>
-
   <div>
     <!-- Replace with your content -->
     <p>
-      Check out our <a href={link} rel="noreferrer">Terms of Services</a>
+      Follow me on <a href={link} rel="noreferrer">Twitter</a>
     </p>
 
     <p class="credits">
-      Made by <a href={githubProfile}>imStav</a> | Powered by Svelte & Vite
+      Made by <a href={githubProfile}>imStav</a> w/ Svelte (and some ☕)
     </p>
   </div>
 </main>
 
 <style>
-  main {
-    max-width: 40%;
-    margin-inline: auto;
-  }
+main {
+  max-width: 40%;
+  margin-inline: auto;
+}
 
-  hr {
-    border: 1px solid #ff390749;
-    margin-bottom: 2rem;
-  }
+.header {
+  display: flex;
+  margin-block: 2rem;
+  place-items: center;
+}
 
-  .catchline h2 { margin-bottom: 1rem; }
+.header h1 {
+  margin-left: 1rem;
+}
 
-  .header {
-    display: flex;
-    margin-block: 2rem;
-    place-items: center;
-  }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-block: 3rem;
+}
 
-  .heading { margin-left: 1rem; }
+.credits { color: #888; }
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin-block: 3rem;
-  }
+@media screen and (max-width: 1400px) {
+  main { max-width: 50%; }
+}
 
-  .grid h2 { margin-bottom: 1rem; }
+@media screen and (max-width: 1200px) {
+  main { max-width: 60%; }
+}
 
-  .credits { color: #888; }
+@media screen and (max-width: 1000px) {
+  main { max-width: 70%; }
+}
 
-  @media screen and (max-width: 1400px) {
-    main { max-width: 50%; }
-  }
+@media screen and (max-width: 900px) {
+  main { max-width: 80%; }
+}
 
-  @media screen and (max-width: 1200px) {
-    main { max-width: 60%; }
-  }
-
-  @media screen and (max-width: 1000px) {
-    main { max-width: 70%; }
-  }
-
-  @media screen and (max-width: 900px) {
-    main { max-width: 80%; }
-  }
-
-  @media screen and (max-width: 780px) {
-    .grid { grid-template-columns: repeat(1, 1fr); }
-  }
+@media screen and (max-width: 780px) {
+  .grid { grid-template-columns: repeat(1, 1fr); }
+}
 </style>
